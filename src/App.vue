@@ -1,17 +1,29 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div>
+    <section class="hero is-info">
+      <div class="hero-body">
+        <p class="title">Klausk Kodinu</p>
+        <p class="subtitle">
+          Puslapis kur žiūrovai, klausytojai ir skaitytojai galėtų užduoti
+          klausimus apie programavimą ir stuff.
+        </p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <QuestionForm />
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import QuestionForm from "./components/QuestionForm.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    QuestionForm,
   },
 };
 </script>
