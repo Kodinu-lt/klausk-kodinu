@@ -25,6 +25,11 @@ export default {
   components: {
     QuestionForm,
   },
+  data() {
+    return {
+      questions: [],
+    };
+  },
 };
 </script>
 
